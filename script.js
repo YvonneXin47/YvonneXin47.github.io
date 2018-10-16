@@ -1,3 +1,10 @@
+$(document).ready(function(){
+  $("#myword").click(function(){
+    $("#hidden").show();
+    $("#creator").hide();
+  });
+});
+
 function show_result(){
 var q1 = prompt('Which personality are you more close to? \n 1 = Social \n 2 = Solitary');
 var q2 = prompt('How would you describe yourself? \n 1 = Talker \n 2 = Listener');
@@ -58,10 +65,3 @@ else
   document.getElementById("animal").src="https://images.unsplash.com/photo-1460999158988-6f0380f81f4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5a982cdff8b38d0758caa758e71f50e0&auto=format&fit=crop&w=1050&q=80"
 }
 }
-
-$(document).ready(function(){
-  $("#myword").click(function(){
-    $("#hidden").show();
-    $("#creator").hide();
-  });
-});
