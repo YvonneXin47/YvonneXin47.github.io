@@ -1,8 +1,7 @@
 $(document).ready(function(){
-  $("#myword").click(function(){
-    $("#hidden").show();
-    $("#creator").hide();
-  });
+    $("#creator").click(function(){
+        $("#creator").fadeOut("slow");
+    });
 });
 
 function show_result(){
