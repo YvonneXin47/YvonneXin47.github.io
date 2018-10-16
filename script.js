@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $("#footer").click(function(){
+        $("#footer").css("background-color", "#ff9a9e");
+    });
+});
+
 function show_result(){
 var q1 = prompt('Which personality are you more close to? \n 1 = Social \n 2 = Solitary');
 var q2 = prompt('How would you describe yourself? \n 1 = Talker \n 2 = Listener');
