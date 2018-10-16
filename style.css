@@ -1,0 +1,28 @@
+body {background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);}
+
+header {padding:70px;}
+
+h1 { font-family: "Tw Cen MT";
+     font-size: 50px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 800;
+     line-height: 26.4px;}
+
+h3 {font-family:'Tw Cen MT';
+    font-size: 30px;
+    font-weight:900;}
+
+p {font-family:'Tw Cen MT Medium';
+   font-size: 20px;}
+
+img {height:400px;
+    width:600px;}
+
+footer {
+  background-color: #fcb69f;
+  font-size:16px;
+  font-family: fantasy;
+  color:white;
+  padding: 10px;
+    }
