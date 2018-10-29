@@ -16,7 +16,7 @@
            <br /><br />
            <div class="container">
                 <h1 align="center">Show JSON Data in Jquery Datatables</h3><br />
-                <h3 align="center">Employee Database</h3><br />
+                <h3 align="center">Archery Database</h3><br />
                 <table id="data-table" class="table table-bordered">
                      <thead>
                           <tr>
@@ -33,11 +33,18 @@
  <script>
  $(document).ready(function(){
       $('#data-table').DataTable({
-           "ajax"     :     "employee_data.json",
+           "ajax"     :     "recurvewomen.json",
            "columns"     :     [
-                {     "data"     :     "name"     },
-                {     "data"     :     "gender"},
-                {     "data"     :     "designation"}
+                {     "data"     :     "名次"     },
+                {     "data"     :     "姓名"},
+                {     "data"     :     "會員號碼"},
+                {     "data"     :     "屬會"},
+                {     "data"     :     "最高分三場總分"},
+                {     "data"     :     "2018年度香港射箭淘汰賽(星章賽)\n2018年9月15,30日"},
+                {     "data"     :     "2018年香港室內射箭公開賽(星章賽)\n2018年9月29 日"},
+                {     "data"     :     "2018年香港盃射箭比賽\n2018年6月10及24日"},
+                {     "data"     :     "Samsung第61屆體育節射箭錦標賽 (青少年組)\n2018年5月19日"},
+                {     "data"     :     "Samsung第61屆體育節射箭錦標賽\n2018年5月19日"}
            ]
       });
       var chart = c3.generate({
