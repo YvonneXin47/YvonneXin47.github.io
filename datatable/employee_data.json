@@ -155,5 +155,10 @@
                 "gender": "Female",
                 "designation": "Industrial production manager"
            }
+           {
+                "name": "Yvonne Xin",
+                "gender": "Female",
+                "designation": "CUHK student"
+           }
       ]
- }  
+ }
