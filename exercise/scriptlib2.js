@@ -21,6 +21,7 @@ $(document).ready(function(){
                        items.push(value.fields.intro);
                        items.push(value.fields.location);
                        items.push(value.fields.time);
+                       items.push(value.fields.food);
                        dataSet.push(items);
                 }); // end .each
              $('#example').DataTable( {
@@ -34,6 +35,8 @@ $(document).ready(function(){
                      { title: "location",
                        defaultContent:""},
                      { title: "time",
+                       defaultContent:""},
+                     { title: "food",
                        defaultContent:""},
                  ]
              } );
