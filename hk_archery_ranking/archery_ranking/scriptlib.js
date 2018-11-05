@@ -44,11 +44,11 @@ $(document).ready(function(){
                    $.each(result.records, function(key,value) {
                        table5_items = [];
                            table5_items.push(value.fields.Name);
-                           table5_items.push(value.fields.Oct);
-                           table5_items.push(value.fields.Nov);
-                           table5_items.push(value.fields.Jun);
-                           table5_items.push(value.fields.May);
                            table5_items.push(value.fields.Jan);
+                           table5_items.push(value.fields.May);
+                           table5_items.push(value.fields.Jun);
+                           table5_items.push(value.fields.Sep);
+                           table5_items.push(value.fields.Oct);
                            table5_dataSet.push(table5_items);
                            console.log(table5_items);
                     }); // end .each
@@ -60,15 +60,15 @@ $(document).ready(function(){
                      columns: [
                          { title: "Name",
                            defaultContent:""},
-                         { title: "Oct",
+                         { title: "Jan",
                              defaultContent:"" },
-                         { title: "Nov",
+                         { title: "May",
                            defaultContent:"" },
                          { title: "Jun",
                            defaultContent:""},
-                         { title: "May",
+                         { title: "Sep",
                            defaultContent:""},
-                         { title: "Jan",
+                         { title: "Oct",
                            defaultContent:""},
                      ]
                  });
@@ -136,11 +136,11 @@ $(document).ready(function(){
                 $.each(result.records, function(key,value) {
                     table6_items = [];
                         table6_items.push(value.fields.Name);
-                        table6_items.push(value.fields.Oct);
-                        table6_items.push(value.fields.Nov);
-                        table6_items.push(value.fields.Jun);
-                        table6_items.push(value.fields.May);
                         table6_items.push(value.fields.Jan);
+                        table6_items.push(value.fields.May);
+                        table6_items.push(value.fields.Jun);
+                        table6_items.push(value.fields.Sep);
+                        table6_items.push(value.fields.Oct);
                         table6_dataSet.push(table6_items);
                         console.log(table6_items);
                  }); // end .each
@@ -152,15 +152,15 @@ $(document).ready(function(){
                   columns: [
                       { title: "Name",
                         defaultContent:""},
-                      { title: "Oct",
+                      { title: "Jan",
                           defaultContent:"" },
-                      { title: "Nov",
+                      { title: "May",
                         defaultContent:"" },
                       { title: "Jun",
                         defaultContent:""},
-                      { title: "May",
+                      { title: "Sep",
                         defaultContent:""},
-                      { title: "Jan",
+                      { title: "Oct",
                         defaultContent:""},
                   ]
               });
@@ -229,11 +229,11 @@ $(document).ready(function(){
               $.each(result.records, function(key,value) {
                   table7_items = [];
                       table7_items.push(value.fields.Name);
-                      table7_items.push(value.fields.Oct);
-                      table7_items.push(value.fields.Nov);
-                      table7_items.push(value.fields.Jun);
-                      table7_items.push(value.fields.May);
                       table7_items.push(value.fields.Jan);
+                      table7_items.push(value.fields.May);
+                      table7_items.push(value.fields.Jun);
+                      table7_items.push(value.fields.Sep);
+                      table7_items.push(value.fields.Oct);
                       table7_dataSet.push(table7_items);
                       console.log(table7_items);
                }); // end .each
@@ -245,15 +245,15 @@ $(document).ready(function(){
                 columns: [
                     { title: "Name",
                       defaultContent:""},
-                    { title: "Oct",
+                    { title: "Jan",
                         defaultContent:"" },
-                    { title: "Nov",
+                    { title: "May",
                       defaultContent:"" },
                     { title: "Jun",
                       defaultContent:""},
-                    { title: "May",
+                    { title: "Sep",
                       defaultContent:""},
-                    { title: "Jan",
+                    { title: "Oct",
                       defaultContent:""},
                 ]
             });
@@ -321,11 +321,11 @@ $(document).ready(function(){
               $.each(result.records, function(key,value) {
                   table8_items = [];
                       table8_items.push(value.fields.Name);
-                      table8_items.push(value.fields.Oct);
-                      table8_items.push(value.fields.Nov);
-                      table8_items.push(value.fields.Jun);
-                      table8_items.push(value.fields.May);
                       table8_items.push(value.fields.Jan);
+                      table8_items.push(value.fields.May);
+                      table8_items.push(value.fields.Jun);
+                      table8_items.push(value.fields.Sep);
+                      table8_items.push(value.fields.Oct);
                       table8_dataSet.push(table8_items);
                       console.log(table8_items);
                }); // end .each
@@ -337,15 +337,15 @@ $(document).ready(function(){
                 columns: [
                     { title: "Name",
                       defaultContent:""},
-                    { title: "Oct",
+                    { title: "Jan",
                         defaultContent:"" },
-                    { title: "Nov",
+                    { title: "May",
                       defaultContent:"" },
                     { title: "Jun",
                       defaultContent:""},
-                    { title: "May",
+                    { title: "Sep",
                       defaultContent:""},
-                    { title: "Jan",
+                    { title: "Oct",
                       defaultContent:""},
                 ]
             });
