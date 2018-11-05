@@ -11,7 +11,8 @@ $(document).ready(function(){
                       table1_items.push(value.fields.Ranking);
                       table1_items.push(value.fields.Name);
                       table1_items.push(value.fields.Club);
-                      table1_items.push(value.fields.Score);
+                      table1_items.push(value.fields.Oct);
+                      table1_items.push(value.fields.Average_Score);
                       table1_dataSet.push(table1_items);
                       console.log(table1_items);
                }); // end .each
@@ -27,33 +28,69 @@ $(document).ready(function(){
                         defaultContent:"" },
                     { title: "Club",
                       defaultContent:"" },
-                    { title: "Score",
+                    { title: "Latest Score",
+                      defaultContent:""},
+                    { title: "Average Score",
                       defaultContent:""},
                 ]
             });
+            }); // end .getJSON
+
+            var table5_items = [];
+            var i = 0;
+            var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Recurve%20Women?api_key=keyx6ScOw6mCv5Vc4&maxRecords=10&view=Grid%20view";
+            var table5_dataSet = [];
+            $.getJSON(airtable_read_endpoint, function(result) {
+                   $.each(result.records, function(key,value) {
+                       table5_items = [];
+                           table5_items.push(value.fields.Name);
+                           table5_items.push(value.fields.Oct);
+                           table5_items.push(value.fields.Nov);
+                           table5_items.push(value.fields.Jun);
+                           table5_items.push(value.fields.May);
+                           table5_items.push(value.fields.Jan);
+                           table5_dataSet.push(table5_items);
+                           console.log(table5_items);
+                    }); // end .each
+                    console.log(table5_dataSet);
+
+                 $('#table5').DataTable( {
+                     data: table5_dataSet,
+                     retrieve: true,
+                     columns: [
+                         { title: "Name",
+                           defaultContent:""},
+                         { title: "Oct",
+                             defaultContent:"" },
+                         { title: "Nov",
+                           defaultContent:"" },
+                         { title: "Jun",
+                           defaultContent:""},
+                         { title: "May",
+                           defaultContent:""},
+                         { title: "Jan",
+                           defaultContent:""},
+                     ]
+                 });
 
             var contents = document.getElementById('title1').innerHTML="The Latest Five Months Records";
 
             var chart = c3.generate({
-              bindto: '#chart_rw',
-              data: {
-              columns: [
-             ['Wong Cheukying', 54, 54, 41, 54, 49],
-             ['Pun Waiching', 40.5, 46, 54, 54, 54],
-             ['Lei Sukwan', 40, 30, 20, 40, 30],
-             ['Chan Wingtung', 38, 31, 34, 34, 40],
-             ['Yeung Seuijing', 35, 35, 31, 24, 18.5],
-             ['Lam Sukjing', 34, 17, 17, 23.5, 20.5],
-             ['Jeng Jingyi', 31, 19, 12, 12, 0],
-             ['Pun Chiuyi', 28, 30, 32, 25, 25],
-             ['Hon Hinyan', 24.75, 23.75, 32, 37.5, 45],
-             ['Jyu Houching', 24.5, 24.5, 35, 38, 29.5]
-                ]
-              }
-            });
-
-       }); // end .getJSON
-     }); // end .button
+                     bindto: '#chart_rw',
+                     data: {
+                         columns: table5_dataSet,
+                         type : 'line'
+                       },
+                       axis: {
+                         x: {label: 'Time'},
+                         y: {label: 'Score'}
+                       },
+                       bar: {
+                         title: "The Latest Five Months Records",
+                       }
+                     });
+                   });
+                 }); // end .button
 
        $("button#recurve_men").click(function() {
          var table2_items = [];
@@ -66,7 +103,8 @@ $(document).ready(function(){
                         table2_items.push(value.fields.Ranking);
                         table2_items.push(value.fields.Name);
                         table2_items.push(value.fields.Club);
-                        table2_items.push(value.fields.Score);
+                        table2_items.push(value.fields.Oct);
+                        table2_items.push(value.fields.Average_Score);
                         table2_dataSet.push(table2_items);
                         console.log(table2_items);
                  }); // end .each
@@ -82,33 +120,70 @@ $(document).ready(function(){
                           defaultContent:"" },
                       { title: "Club",
                         defaultContent:"" },
-                      { title: "Score",
+                      { title: "Latest Score",
+                        defaultContent:""},
+                      { title: "Average Score",
                         defaultContent:""},
                   ]
               } );
+         }); // end .getJSON
 
-              var contents = document.getElementById('title2').innerHTML="The Latest Five Months Records";
+         var table6_items = [];
+         var i = 0;
+         var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Recurve%20Men?api_key=keyx6ScOw6mCv5Vc4&maxRecords=10&view=Grid%20view";
+         var table6_dataSet = [];
+         $.getJSON(airtable_read_endpoint, function(result) {
+                $.each(result.records, function(key,value) {
+                    table6_items = [];
+                        table6_items.push(value.fields.Name);
+                        table6_items.push(value.fields.Oct);
+                        table6_items.push(value.fields.Nov);
+                        table6_items.push(value.fields.Jun);
+                        table6_items.push(value.fields.May);
+                        table6_items.push(value.fields.Jan);
+                        table6_dataSet.push(table6_items);
+                        console.log(table6_items);
+                 }); // end .each
+                 console.log(table6_dataSet);
 
-              var chart = c3.generate({
-                bindto: '#chart_rm',
-                data: {
-                columns: [
-               ['Ngaan Dungcyun', 57, 49.5, 49.5, 46.5, 46.5],
-               ['Geoi Zunggong', 51, 51, 51, 54, 46],
-               ['Wong Sungtin', 41, 47, 49.5, 49.5, 39],
-               ['Mou Leoi', 31, 36, 36, 28, 20],
-               ['Ceoi Zeonman', 30, 14, 14, 14, 24],
-               ['Zeng Waiciu', 28, 25, 18, 18, 21],
-               ['Gong Singgwong', 25, 25, 28, 19.5, 19.5],
-               ['Luk Manwaa', 23, 17.5, 17.5, 10.75, 4],
-               ['Dung Saiman', 21.75, 20.25, 20.25, 14.25, 12.5],
-               ['Sin Syuwun', 21, 21, 9, 9, 14]
+              $('#table6').DataTable( {
+                  data: table6_dataSet,
+                  retrieve: true,
+                  columns: [
+                      { title: "Name",
+                        defaultContent:""},
+                      { title: "Oct",
+                          defaultContent:"" },
+                      { title: "Nov",
+                        defaultContent:"" },
+                      { title: "Jun",
+                        defaultContent:""},
+                      { title: "May",
+                        defaultContent:""},
+                      { title: "Jan",
+                        defaultContent:""},
                   ]
-                }
               });
 
-         }); // end .getJSON
-     }); // end .button
+         var contents = document.getElementById('title2').innerHTML="The Latest Five Months Records";
+
+         var chart = c3.generate({
+                  bindto: '#chart_rm',
+                  data: {
+                      columns: table6_dataSet,
+                      type : 'line'
+                    },
+                    axis: {
+                      x: {label: 'Time'},
+                      y: {label: 'Score'}
+                    },
+                    bar: {
+                      title: "The Latest Five Months Records",
+                    }
+                  });
+                });
+              }); // end .button
+
 
      $("button#compound_women").click(function() {
        var table3_items = [];
@@ -121,7 +196,8 @@ $(document).ready(function(){
                       table3_items.push(value.fields.Ranking);
                       table3_items.push(value.fields.Name);
                       table3_items.push(value.fields.Club);
-                      table3_items.push(value.fields.Score);
+                      table3_items.push(value.fields.Oct);
+                      table3_items.push(value.fields.Average_Score);
                       table3_dataSet.push(table3_items);
                       console.log(table3_items);
                }); // end .each
@@ -137,33 +213,69 @@ $(document).ready(function(){
                         defaultContent:"" },
                     { title: "Club",
                       defaultContent:"" },
-                    { title: "Score",
+                    { title: "Latest Score",
+                      defaultContent:""},
+                    { title: "Average Score",
+                      defaultContent:""},
+                ]
+            });
+       }); // end .getJSON
+
+       var table7_items = [];
+       var i = 0;
+       var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Compound%20Women?api_key=keyx6ScOw6mCv5Vc4&maxRecords=10&view=Grid%20view";
+       var table7_dataSet = [];
+       $.getJSON(airtable_read_endpoint, function(result) {
+              $.each(result.records, function(key,value) {
+                  table7_items = [];
+                      table7_items.push(value.fields.Name);
+                      table7_items.push(value.fields.Oct);
+                      table7_items.push(value.fields.Nov);
+                      table7_items.push(value.fields.Jun);
+                      table7_items.push(value.fields.May);
+                      table7_items.push(value.fields.Jan);
+                      table7_dataSet.push(table7_items);
+                      console.log(table7_items);
+               }); // end .each
+               console.log(table7_dataSet);
+
+            $('#table7').DataTable( {
+                data: table7_dataSet,
+                retrieve: true,
+                columns: [
+                    { title: "Name",
+                      defaultContent:""},
+                    { title: "Oct",
+                        defaultContent:"" },
+                    { title: "Nov",
+                      defaultContent:"" },
+                    { title: "Jun",
+                      defaultContent:""},
+                    { title: "May",
+                      defaultContent:""},
+                    { title: "Jan",
                       defaultContent:""},
                 ]
             });
 
-            var contents = document.getElementById('title3').innerHTML="The Latest Five Months Records";
+       var contents = document.getElementById('title3').innerHTML="The Latest Five Months Records";
 
-            var chart = c3.generate({
-              bindto: '#chart_cw',
-              data: {
-              columns: [
-             ['Zeng Hungting', 54, 49, 44, 33.5, 28.5],
-             ['Luk Jinji', 46, 57, 57, 50, 38.5],
-             ['Lei Waihong', 37, 41, 40.5, 40.5, 32],
-             ['Sam Gitpui', 36.5, 45, 45, 48, 43],
-             ['Tung Gaawai', 35.25, 24.75, 24.75, 23.25, 23.5],
-             ['Lau Zicing', 32.5, 24, 4, 14, 14],
-             ['Lin Jikei', 27.5, 27.5, 19.25, 15.5, 7],
-             ['Sou Saujing', 24.75, 24.75, 21.75, 15.5, 16.75],
-             ['Ngai Sukman', 23.5, 23.5, 21.75, 12.25, 7],
-             ['Coi Junlung', 23, 23, 30, 37, 40]
-                ]
-              }
-            });
-
-       }); // end .getJSON
-     }); // end .button
+       var chart = c3.generate({
+                bindto: '#chart_cw',
+                data: {
+                    columns: table7_dataSet,
+                    type : 'line'
+                  },
+                  axis: {
+                    x: {label: 'Time'},
+                    y: {label: 'Score'}
+                  },
+                  bar: {
+                    title: "The Latest Five Months Records",
+                  }
+                });
+              });
+            }); // end .button
 
      $("button#compound_men").click(function() {
        var table4_items = [];
@@ -176,7 +288,8 @@ $(document).ready(function(){
                       table4_items.push(value.fields.Ranking);
                       table4_items.push(value.fields.Name);
                       table4_items.push(value.fields.Club);
-                      table4_items.push(value.fields.Score);
+                      table4_items.push(value.fields.Oct);
+                      table4_items.push(value.fields.Average_Score);
                       table4_dataSet.push(table4_items);
                       console.log(table4_items);
                }); // end .each
@@ -192,33 +305,69 @@ $(document).ready(function(){
                         defaultContent:"" },
                     { title: "Club",
                       defaultContent:"" },
-                    { title: "Score",
+                    { title: "Latest Score",
+                      defaultContent:""},
+                    { title: "Average Score",
+                      defaultContent:""},
+                ]
+            });
+       }); // end .getJSON
+
+       var table8_items = [];
+       var i = 0;
+       var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Compound%20Men?api_key=keyx6ScOw6mCv5Vc4&maxRecords=10&view=Grid%20view";
+       var table8_dataSet = [];
+       $.getJSON(airtable_read_endpoint, function(result) {
+              $.each(result.records, function(key,value) {
+                  table8_items = [];
+                      table8_items.push(value.fields.Name);
+                      table8_items.push(value.fields.Oct);
+                      table8_items.push(value.fields.Nov);
+                      table8_items.push(value.fields.Jun);
+                      table8_items.push(value.fields.May);
+                      table8_items.push(value.fields.Jan);
+                      table8_dataSet.push(table8_items);
+                      console.log(table8_items);
+               }); // end .each
+               console.log(table8_dataSet);
+
+            $('#table8').DataTable( {
+                data: table8_dataSet,
+                retrieve: true,
+                columns: [
+                    { title: "Name",
+                      defaultContent:""},
+                    { title: "Oct",
+                        defaultContent:"" },
+                    { title: "Nov",
+                      defaultContent:"" },
+                    { title: "Jun",
+                      defaultContent:""},
+                    { title: "May",
+                      defaultContent:""},
+                    { title: "Jan",
                       defaultContent:""},
                 ]
             });
 
-            var contents = document.getElementById('title4').innerHTML="The Latest Five Months Records";
+       var contents = document.getElementById('title4').innerHTML="The Latest Five Months Records";
 
-            var chart = c3.generate({
-              bindto: '#chart_cm',
-              data: {
-              columns: [
-             ['Jan Gaaging', 43.25, 23.25, 23.25, 6.25, 0],
-             ['Lei Housam', 41, 48, 54, 57, 51],
-             ['Lau Zihung', 41, 51, 51, 51, 37],
-             ['Ceoi Zeongit', 40.5, 30.5, 21, 21, 7],
-             ['Wong Waajan', 38.5, 38.5, 46, 48, 31],
-             ['Jip Puilam', 38.5, 36.5, 29.5, 29.5, 26.75],
-             ['Loeng Wingci', 33, 33, 25.25, 25.25, 15.25],
-             ['Can Minghang', 29.5, 29.5, 14.75, 9.75, 16.25],
-             ['Gwaan Zeonhou', 24.75, 14.75, 2.75, 6, 7.25],
-             ['Zoeng Kaihim', 22, 19, 20.75, 20.5, 16]
-                ]
-              }
-            });
-
-       }); // end .getJSON
-     }); // end .button
+       var chart = c3.generate({
+                bindto: '#chart_cm',
+                data: {
+                    columns: table8_dataSet,
+                    type : 'line'
+                  },
+                  axis: {
+                    x: {label: 'Time'},
+                    y: {label: 'Score'}
+                  },
+                  bar: {
+                    title: "The Latest Five Months Records",
+                  }
+                });
+              });
+            }); // end .button
 
     $("button#recurve_women").click(function(){
         $("#rw").slideToggle();
