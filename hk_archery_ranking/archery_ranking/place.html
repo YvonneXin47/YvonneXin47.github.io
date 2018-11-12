@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Home / HK Archery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand d-none d-md-block" href="#">
+        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+        <b>HK ARCHERY</b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar16">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar16">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="home.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="video.html">Video</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="place.html">Where to play</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="competition.html">Competition</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="ranking.html">Ranking</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1"><b>HONG&nbsp;KONG<br>ARCHERY</b></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">Lead paragraph. A wonderful serenity has taken possession of my entire soul.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item text-dark"> <a href="" class="nav-link text-dark" data-toggle="pill" data-target="#tabone">CLUB</a> </li>
+            <li class="nav-item"> <a class="nav-link text-dark active show" href="" data-toggle="pill" data-target="#tabtwo">Golden Trust Archery</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link text-dark" data-toggle="pill" data-target="#tabthree">Target X Archery</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link text-dark" data-toggle="pill" data-target="#tabfour">Tab 4</a> </li>
+          </ul>
+        </div>
+        <div class="col-8">
+          <div class="tab-content">
+            <div class="tab-pane fade" id="tabone" role="tabpanel">
+              <p class="text-dark">In my soul and absorb its power, like the form of a beloved mistress, then I often think with longing. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+            </div>
+            <div class="tab-pane fade active show" id="tabtwo" role="tabpanel">
+              <p class="text-dark"><b>About Golden Trust Archery</b><br><br>Golden Trust Archery Club was founded in Oct, 2012. It is the 1st archery training centre in HK since 2012. We are keen to promote archery in Hong Kong. We are also the biggest archery centre in Hong Kong, with 7000 sq feet and 25 shooting lanes. Our location is just 3 mins from Lai Chi Kok MTR. Come and share the joy of archery.<br><br></p>
+              <p class="text-dark" contenteditable="true"> <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp; 2/F, Block C, Wing Hong Factory Building, 781 Yu Chau West Street, Lai Chi Kok, Hong Kong<br></p>
+              <p class="text-dark" contenteditable="true"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 2370 2250 / 2370 2487 (Phone)<br>&nbsp; &nbsp; &nbsp;6521 8288 (Whatsapp)<br></p>
+              <p class="text-dark" contenteditable="true"> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; rocky@archeryhk.com<br></p>
+              <p class="text-dark"> <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp; <a href="https://www.facebook.com/archeryhk/" target="_blank" class="text-dark">https://www.facebook.com/archeryhk/</a><br></p>
+              <p class="text-dark"> <i class="fa fa-globe" aria-hidden="true"></i>&nbsp; <a href="http://archeryhk.com/en_US/" class="text-dark" target="_blank">http://archeryhk.com/en_US/</a><br></p>
+              <p class="text-dark"> <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp; 10:00 - 22:30 (Monday - Friday)<br>&nbsp; &nbsp; &nbsp;10:00 - 21:00 (Saturday - Sunday)<br><br></p>
+              <div id="map-GTA" style="width: 700px; height: 500px;" contenteditable="true"></div>
+              <button type="button" class="btn btn-secondary" id='show' onclick="show_districts();">Show</button>
+            </div>
+            <div class="tab-pane fade" id="tabthree" role="tabpanel">
+              <p class="text-dark"><b>About&nbsp;Target X Archery</b><br><br>Established in May 2017, Target X Archery aims to promote archery culture and provide a comfortable and safe practice place for archers. Our archery training courses are taught by registered coaches of the Hong Kong Archery Association.<br><br></p>
+              <p class="text-dark"> <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp; Room B, 2/F, Kai Yip Factory Building, 15-17 Sam Chuk St, San Po Kong</p>
+              <p class="text-dark" style=""> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 9525 7704<br></p>
+              <p class="text-dark"> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; targetxarchery@gmail.com</p>
+              <p class="text-dark"> <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp; <a href="https://www.facebook.com/targetxarchery/" target="_blank" class="text-dark">https://www.facebook.com/targetxarchery/</a><br></p>
+              <p class="text-dark"> <i class="fa fa-globe" aria-hidden="true"></i>&nbsp; <a href="http://targetxarchery.com/" target="_blank" class="text-dark">http://targetxarchery.com/</a></p>
+              <p class="text-dark"> <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp; 16:00 - 23:00 (Monday - Friday)<br>&nbsp; &nbsp; &nbsp;15:00 - 23:00 (Saturday - Sunday)<br><br></p>
+              <div id="map-TXA" style="width: 700px; height: 500px;" contenteditable="true"></div>
+            </div>
+            <div class="tab-pane fade" id="tabfour" role="tabpanel">
+              <p class="text-dark">Which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row"><i class="fa fa-dot-circle-o fa-3x mx-auto py-3 fa-fw text-light"></i>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="nav d-flex justify-content-center" style="">
+                <p class="mb-0 pt-3 pb-3">©2018 Pingendo All rights reserved</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+
+      var map = L.map('map-GTA')
+            .addLayer(mapboxTiles)
+            .setView([22.287111, 114.191667], 12);
+
+      var items = [];
+      var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Archery%20Club?api_key=keyx6ScOw6mCv5Vc4&sortField=_createdTime&sortDirection=desc";
+      var data = [];
+      $.getJSON(airtable_read_endpoint, function(result) {
+             $.each(result.records, function(key,value) {
+                 items = {};
+                     items["name"] = value.fields.Name;
+                     items["url"] = value.fields.url;
+                     items["latitud"] = value.fields.Lat;
+                     items["longitud"] = value.fields.Lng;
+                     data.push(items);
+                     console.log(items);
+              }); // end .each
+      }); // end getJSON
+  </script>
+  <script>
+  function show_districts(){
+
+    for (var i in data) {
+        var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+        L.marker( latlng )
+        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' +data[i].name + '</a>' )
+        .addTo(map);
+    }
+  }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>
