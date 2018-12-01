@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK Archery</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Hong Kong archery; archery;" name="keywords">
+  <meta content="HK Archery is an archery website designed for the local archery amateurs and also for promoting the archery culture among the public." name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Leaflet CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="HK Archery"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="archery.html">About Archery</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="ranking.html">Ranking</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">HONG KONG <span>ARCHERY</span></h1>
+      <p class="mb-4 pb-0">For local archery amateurs and anyone who would like to explore it with us.<br> One shot can have you hooked for a lifetime.</p>
+      <a href="https://youtu.be/hLwqskjFXwU" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      <a href="#about" class="about-btn scrollto">About Archey</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>WHAT IS ARCHERY</h2>
+            <p>Archery is the practice or skill of using a bow to shoot arrows.
+              Historically, it has been used for hunting and combat. While today,
+              it is mainly a competitive sport and recreational activity which
+              is accessible for all ages, genders and abilities. Archery requires
+              skills of precision, control, focus, repetition and determination.
+              One shot can have you hooked for a lifetime. </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Types of Archery</h3>
+            <li>Target archery</li>
+            <li>Field archery</li>
+            <li>3D archery</li>
+            <li>Clout archery</li>
+            <li>Flight archery</li>
+          </div>
+          <div class="col-lg-3">
+            <h3>Types of Bow</h3>
+            <li>Recurve</li>
+            <li>Compound</li>
+            <li>Traditional</li>
+            <li>Crossbow</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Tutorials Section
+    ============================-->
+    <section id="tutorials" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Archery Videos</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/1.jpg" alt="Tutorial 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="event_video.html" target="_blank">Latest Events</a></h3>
+                <p>World-level Competition</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/2.jpg" alt="Tutorial 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="360_video.html" target="_blank">Archery 360</a></h3>
+                <p>Archery tutorials</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/3.jpg" alt="Tutorial 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="coach_video.html" target="_blank">Coach Me</a></h3>
+                <p>Advice from top archers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/4.jpg" alt="Tutorial 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="shootlikeme_video.html" target="_blank">#ShootLikeMe</a></h3>
+                <p>Techniques of top athletes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/5.jpg" alt="Tutorial 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="slowmotion_video.html" target="_blank">Archery in Slow Motion</a></h3>
+                <p>Slow motion montages of top archers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tutorial">
+              <img src="img/tutorials/6.jpg" alt="Tutorial 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="shootoff_video.html" target="_blank">Shoot-off Tiebreakers</a></h3>
+                <p>The most breathtaking moments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+          Articles Section
+        ============================-->
+        <section id="blocks" class="section-with-bg wow fadeInUp">
+
+          <div class="container">
+            <div class="section-header">
+              <h2>Archery Articles</h2>
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6">
+                <div class="bow">
+                  <div class="bow-img">
+                    <img src="img/tutorials/articles/a1.jpg" alt="youth shooting" class="img-fluid">
+                  </div>
+                  <h3><a href="article_1.html" target="_blank">Extend Your Range With 3 Tips</a></h3>
+                  <p>Farther distances amplify all the little inconsistencies in your shooting</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="bow">
+                  <div class="bow-img">
+                    <img src="img/tutorials/articles/a2.jpg" alt="recurve archers" class="img-fluid">
+                  </div>
+                  <h3><a href="article_2.html" target="_blank">5 Common Archery Mistakes</a></h3>
+                  <p>Common archery mistakes that recurve archers face and ways to correct them</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="bow">
+                  <div class="bow-img">
+                    <img src="img/tutorials/articles/a3.jpg" alt="competitive archery" class="img-fluid">
+                  </div>
+                  <h3><a href="article_3.html" target="_blank">Different Competitive Styles</a></h3>
+                  <p>From longbow to compound, competitive archery features various styles</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="wow fadeInUp">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#December" role="tab" data-toggle="tab">DEC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#January" role="tab" data-toggle="tab">JAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#February" role="tab" data-toggle="tab">FEB</a>
+          </li>
+        </ul>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule December -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="December">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>01 - 02</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>Hong Kong Youth Outdoor Target Archery Open Competition</h4>
+                <p><span>LSFAR • YOUTH</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>15 - 16 / 23</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>Hong Kong Youth Indoor Archery Elimination Tournament</h4>
+                <p><span>LWHSC • YOUTH</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>16</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>NDAC Archery Competition</h4>
+                <p><span>NDSG • YOUTH</span></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule December -->
+
+          <!-- Schdule January -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="January">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>06</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>Tsuen Wan District Archery Competition 2018/19</h4>
+                <p><span>SMVSG • RECURVE NOVICE • JUNIOR • INTERMEDIATE</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>13</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>The 11th Eastern District Archery Championship</span></h4>
+                <p><span>TBC</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>19 / 26 - 27</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>HK Target Archery Championship (Star Shoot)</h4>
+                <p><span>LSFAR • RECURVE • COMPOUND • ALL</span></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule January -->
+
+          <!-- Schdule February -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="February">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>17</b><br/>8:00-20:00</time></div>
+              <div class="col-md-10">
+                <h4>20th HKUST Indoor Archery Open Competition</h4>
+                <p><span>HKUST • ALL</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>17</b><br/>8:00-20:00</time></div>
+              <div class="col-md-10">
+                <h4>Wong Tai Sin Archery Competition 2018/19</h4>
+                <p><span>NCWPAR • RECURVE JUNIOR • RECURVE NOVICE • COMPOUND JUNIOR</span></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time><b>24</b><br/>7:00-19:00</time></div>
+              <div class="col-md-10">
+                <h4>21st Tuen Mun Recreation and Sports Centre Archery Competition</h4>
+                <p><span>TMRSC • RECURVE JUNIOR • RECURVE NOVICE</span></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule February -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="section-with-bg wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>LOCAL CLUBS</h2>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map" id="map"><iframe frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>The Best Local Archery Clubs You Can't Miss</h3>
+                <p>With professional archery clubs, Hong Kong is a perfect place
+                  for playing archery. For those who don't know where to start
+                  with, these clubs provide a comfortable environment with
+                  professional coaching and equipments.</p><br/>
+                <button type="button" id='show' onclick="show_districts();">Show Clubs</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
+        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
+        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
+        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
+        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
+        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
+        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
+        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="img/logo.png" alt="HK Archery">
+            <p>The HK Archery website is designed to serve
+              the local archery amateurs and to engage more people with this sport!</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>HK Archery</h4>
+            <div>
+              <div class="left">
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="archery.html">About Archery</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="tutorials.html">Tutorials</a></li>
+            </ul>
+              </div>
+              <div class="right">
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="ranking.html">Ranking</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="clubs.html">Clubs</a></li>
+            </ul>
+              </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Declaration</h4>
+            <p>
+              This is a student project by Yvonne Xin for the course
+              COM5961 of the New Media Programme of the School of Journalism
+              and Communication, CUHK.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Javascript For Map -->
+  <script>
+      var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+
+      var map = L.map('map')
+            .addLayer(mapboxTiles)
+            .setView([22.3489, 114.1464], 11);
+
+      var items = [];
+      var airtable_read_endpoint = "https://api.airtable.com/v0/appoSSyxNcXWWvTf0/Archery%20Club?api_key=keyx6ScOw6mCv5Vc4&sortField=_createdTime&sortDirection=desc";
+      var data = [];
+      $.getJSON(airtable_read_endpoint, function(result) {
+             $.each(result.records, function(key,value) {
+                 items = {};
+                     items["name"] = value.fields.Name;
+                     items["url"] = value.fields.url;
+                     items["latitud"] = value.fields.Lat;
+                     items["longitud"] = value.fields.Lng;
+                     data.push(items);
+                     console.log(items);
+              }); // end .each
+      }); // end getJSON
+  </script>
+  <script>
+  function show_districts(){
+
+    for (var i in data) {
+        var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+        L.marker( latlng )
+        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' +data[i].name + '</a>' )
+        .addTo(map);
+    }
+  }
+  </script>
+</body>
+
+</html>
