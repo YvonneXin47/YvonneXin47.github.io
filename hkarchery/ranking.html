@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ranking / HK Archery</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Hong Kong archery; HK archery ranking; archery;" name="keywords">
+  <meta content="HK Archery is an archery website designed for the local archery amateurs and also for promoting the archery culture among the public." name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Data Table File -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet" type="text/css">
+  <script src="js/scriptlib.js"></script>
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/logo.png" alt="HK Archery"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archery.html">About Archery</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li class="menu-active"><a href="ranking.html">Ranking</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <section id="banner-4">
+    <div class="banner-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Hong Kong Ranking</h1>
+      <p class="mb-4 pb-0">See the latest rankings and top players' excellent performance.</p>
+    </div>
+  </section>
+
+  <main id="main" class="main-page">
+
+    <section id="ranking" class="wow fadeInUp">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Hong Kong Ranking</h2>
+        </div>
+
+        <h3 class="sub-heading">Data are collected from Hong Kong Archery Association</h3>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" id="recurve_women" href="#list1" role="tab" data-toggle="tab">Recurve Women</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="recurve_men" href="#list2" role="tab" data-toggle="tab">Recurve Men</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="compound_women" href="#list3" role="tab" data-toggle="tab">Compound Women</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="compound_men" href="#list4" role="tab" data-toggle="tab">Compound Men</button>
+          </li>
+        </ul>
+
+        <div class="tab-content row justify-content-center">
+
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="list1">
+            <div class="table-responsive table-item" id="rw">
+              <table id="table1" width="100%" class="table table-bordered"></table>
+              <h4 id="title1"></h4>
+              <div id="chart_rw"></div>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="list2">
+            <div class="table-responsive table-item" id="rm">
+              <table id="table2" width="100%" class="table table-bordered"></table>
+              <h4 id="title2"></h4>
+              <div id="chart_rm"></div>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="list3">
+            <div class="table-responsive table-item" id="cw">
+              <table id="table3" width="100%" class="table table-bordered"></table>
+              <h4 id="title3"></h4>
+              <div id="chart_cw"></div>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="list4">
+            <div class="table-responsive table-item" id="cm">
+              <table id="table4" width="100%" class="table table-bordered"></table>
+              <h4 id="title4"></h4>
+              <div id="chart_cm"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="img/logo.png" alt="HK Archery">
+            <p>The HK Archery website is designed to serve
+              the local archery amateurs and to engage more people with this sport!</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>HK Archery</h4>
+            <div>
+              <div class="left">
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="archery.html">About Archery</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="tutorials.html">Tutorials</a></li>
+            </ul>
+              </div>
+              <div class="right">
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="ranking.html">Ranking</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="clubs.html">Clubs</a></li>
+            </ul>
+              </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Declaration</h4>
+            <p>
+              This is a student project by Yvonne Xin for the course
+              COM5961 of the New Media Programme of the School of Journalism
+              and Communication, CUHK.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
