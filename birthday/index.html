@@ -120,6 +120,16 @@
         </div>
       </div>
 
+      <div id="vone" style="display:none" class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <form class="row">
+            <div class="col-12">
+              <img class="img-fluid mb-4 d-inline-block" src="images/vone.png">
+            </div>
+          </form>
+        </div>
+      </div>
+
       <div id="result" style="display:none" class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <form class="row">
@@ -159,10 +169,9 @@
 <script>
 function wish() {
   var txt;
-  var wish1 = prompt("Write down your wish (only one), and I will see if there is anything I can do to make it happen");
-  var wish2 = prompt("Oh, I see. Are you sure that's what you want?");
-  if (wish1 == null || wish1 == "" && wish2 == null || wish2 == "") {
-    txt = "Try it, please~";
+  var wish1 = prompt("如果辛球球和你未来男朋友同时掉进水里，你救谁？\n 1 = 辛球球 \n 2 = 男朋友");
+  if (wish1 == '1' || wish1 == '辛球球') {
+    document.getElementById("vone").style.display='block';
   } else {
     document.getElementById("result").style.display='block'
   }
